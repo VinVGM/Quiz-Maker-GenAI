@@ -16,7 +16,7 @@ const Quiz = () => {
 
     useEffect(() => {
         if(!isAllowed){
-            navigate('/')
+            navigate('/home')
         }
 
         axios.get('https://quiz-maker-genai.onrender.com/questions')
