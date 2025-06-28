@@ -73,3 +73,18 @@ button:focus-visible {
   }
 }
 
+
+
+
+
+
+
+
+.progress-label{
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: green;
+}
+
+

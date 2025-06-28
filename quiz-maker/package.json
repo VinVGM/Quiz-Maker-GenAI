@@ -12,6 +12,7 @@
   "dependencies": {
     "@material-tailwind/react": "^2.1.10",
     "@tailwindcss/vite": "^4.1.10",
+    "axios": "^1.10.0",
     "clsx": "^2.1.1",
     "motion": "^12.18.1",
     "primereact": "^10.9.6",
@@ -19,6 +20,7 @@
     "react-dom": "^19.1.0",
     "react-dropzone": "^14.3.8",
     "react-router-dom": "^7.6.2",
+    "socket.io-client": "^4.8.1",
     "tailwind-merge": "^3.3.1",
     "tailwindcss": "^4.1.10"
   },
