@@ -5,3 +5,4 @@ langchain-community
 ibm-watson-machine-learning
 python-dotenv
 eventlet
+pypdf

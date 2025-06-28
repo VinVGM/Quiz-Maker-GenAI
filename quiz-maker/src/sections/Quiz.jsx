@@ -19,7 +19,7 @@ const Quiz = () => {
             navigate('/')
         }
 
-        axios.get('http://https://quiz-maker-genai.onrender.com:5000/questions')
+        axios.get('https://quiz-maker-genai.onrender.com/questions')
              .then((response)=>{
                 setQuestions(response.data)
                 
