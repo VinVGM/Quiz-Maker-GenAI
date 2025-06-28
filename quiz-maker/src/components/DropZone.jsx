@@ -1,7 +1,8 @@
 
-import React, {useState, useMemo, useRef, createRef} from 'react';
+import React, {useState, useMemo, useRef, createRef, useEffect} from 'react';
 import { AnimatePresence, motion } from 'motion/react';
 import {useDropzone} from 'react-dropzone';
+import { useLocation } from 'react-router-dom';
 
 const baseStyle = {
   flex: 1,
@@ -35,6 +36,7 @@ const rejectStyle = {
 
   const dropzoneRef = createRef();
 
+  
 
 
 
@@ -51,8 +53,12 @@ function DropZone(props) {
     const {required, name} = props; 
 
     const hiddenInputRef = useRef(null);
-
+    
+    const location = useLocation()
     const [isSubmitted, setIsSubmitted] = useState(false);
+
+    
+
     
   const {
     getRootProps,

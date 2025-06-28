@@ -22,6 +22,8 @@ const Upload = () => {
     const [progress, setProgress] = useState(0)
     const [progMsg, setProgMsg] = useState("")
 
+    const [key, setKey] = useState(0)
+
 
     const onSubmit = (file) => {
         setIsUploaded(true);
@@ -29,14 +31,13 @@ const Upload = () => {
     }
 
 
-    
 
 
     useEffect(() => {
         if(!isAllowed) {
             navigate('/');
         }
-
+        
         socket.on("progress", (data) => {
         setProgress(data.stage);
         setProgMsg(data.message);
@@ -48,7 +49,7 @@ const Upload = () => {
         };
     }, [isAllowed, navigate]);
 
-
+    
     
     
     const No = [
@@ -95,7 +96,7 @@ const Upload = () => {
   return (
     <>
       <AnimatePresence>
-        { !isUploaded && (
+        {!isUploaded && (
             <motion.div className='flex flex-col lg:flex-row gap-10 lg:gap-5 h-screen w-screen items-center justify-center pl-20 pr-20'
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
