@@ -94,7 +94,7 @@ qNo ='0'
 
 def upload():
     file = request.files.get("file")
-    file.save(f"./backend/base.pdf")
+    file.save(f"base.pdf")
 
     global qNo
     qNo = request.form.get("number")
@@ -116,11 +116,11 @@ def process_pdf_text():
     
     time.sleep(1)
 
-    loader = PyPDFLoader("./backend/base.pdf")
+    loader = PyPDFLoader("base.pdf")
     documents = loader.load()
     pdf_text = "\n".join([doc.page_content for doc in documents])
 
-    os.remove("./backend/base.pdf")
+    os.remove("base.pdf")
     
 
     socketio.emit('progress', {'stage' : 2, 'message' : 'Waking up AI species'})

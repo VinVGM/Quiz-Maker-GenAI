@@ -10,7 +10,7 @@ import { useEffect } from 'react';
 import LoadingBar from '../components/LoadingBar';
 import axios from 'axios';
 
-const socket = io("http://localhost:5000")
+const socket = io("http://https://quiz-maker-genai.onrender.com:5000")
 
 const Upload = () => {
     const navigate = useNavigate();
@@ -70,7 +70,7 @@ const Upload = () => {
         
 
         try {
-            const response = await axios.post("http://localhost:5000/upload", formData, {
+            const response = await axios.post("http://https://quiz-maker-genai.onrender.com:5000/upload", formData, {
                 headers: {
                     "Content-Type" : "multipart/form-data"
                 }
