@@ -69,7 +69,7 @@ const Question = ({q}) => {
                 )}
 
                 {isCorrect === false && (
-                    <motion.p className={`text-1xl font-bold bg-black pl-4 pr-4 pt-1 pb-2 rounded-4xl ${isCorrect ? 'text-green-500' : 'text-red-500'}`}
+                    <motion.p className={`text-1xl font-bold bg-black pl-4 pr-4 pt-2 pb-2 rounded-4xl ${isCorrect ? 'text-green-500' : 'text-red-500'}`}
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5 }}
