@@ -35,7 +35,7 @@ const Upload = () => {
 
     useEffect(() => {
         if(!isAllowed) {
-            navigate('/home');
+            navigate('/');
         }
         
         socket.on("progress", (data) => {
