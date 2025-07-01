@@ -65,7 +65,7 @@ Quiz-Maker-GenAI/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/Quiz-Maker-GenAI.git
+git clone https://github.com/VinVGM/Quiz-Maker-GenAI.git
 cd Quiz-Maker-GenAI
 ```
 
