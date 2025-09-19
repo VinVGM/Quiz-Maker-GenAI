@@ -25,7 +25,7 @@
 
 ## 🎥 Demo
 
-![Demo GIF](demo.gif)
+https://youtu.be/ZLtj5C76a44
 
 > _Upload your notes, watch the AI work, and test your knowledge!_
 
